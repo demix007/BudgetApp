@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_14_165414) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_14_165937) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,8 +19,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_14_165414) do
     t.integer "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "users_id", null: false
-    t.index ["users_id"], name: "index_entities_on_users_id"
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_entities_on_user_id"
   end
 
   create_table "groups", force: :cascade do |t|
@@ -28,17 +28,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_14_165414) do
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "users_id", null: false
-    t.index ["users_id"], name: "index_groups_on_users_id"
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
   create_table "relations", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "groups_id", null: false
-    t.bigint "entities_id", null: false
-    t.index ["entities_id"], name: "index_relations_on_entities_id"
-    t.index ["groups_id"], name: "index_relations_on_groups_id"
+    t.bigint "group_id", null: false
+    t.bigint "entity_id", null: false
+    t.index ["entity_id"], name: "index_relations_on_entity_id"
+    t.index ["group_id"], name: "index_relations_on_group_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -47,8 +47,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_14_165414) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "entities", "users", column: "users_id"
-  add_foreign_key "groups", "users", column: "users_id"
-  add_foreign_key "relations", "entities", column: "entities_id"
-  add_foreign_key "relations", "groups", column: "groups_id"
+  add_foreign_key "entities", "users"
+  add_foreign_key "groups", "users"
+  add_foreign_key "relations", "entities"
+  add_foreign_key "relations", "groups"
 end
