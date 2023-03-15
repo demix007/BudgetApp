@@ -27,4 +27,8 @@ class EntitiesController < ApplicationController
     @entity.destroy
     redirect_to groups_path
   end
+
+  def group_params
+    params[:entity][:relation][:group_id]
+  end
 end
