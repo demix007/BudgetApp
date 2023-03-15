@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'splash/index'
+  get 'splash/new'
   get 'relations/new'
   get 'groups/index'
   get 'groups/show'
