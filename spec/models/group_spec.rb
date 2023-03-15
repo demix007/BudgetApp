@@ -15,4 +15,8 @@ RSpec.describe Group, type: :model do
     expect(@user1.name).to eql 'Ayodeji Abidemi'
   end
 
+  it 'subject should be valid' do
+    expect(@group).to be_valid
+  end
+
 end
