@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
-  def index; end
+  def index
+    @groups = current_user.groups.all
+  end
 
   def show; end
 
