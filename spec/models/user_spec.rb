@@ -15,7 +15,7 @@ RSpec.describe User, type: :model do
   it 'name should have a correct value' do
     expect(subject.name).to eql 'Ayodeji Abidemi'
   end
-  
+
   it 'is valid with valid attributes' do
     expect(subject).to be_valid
   end
