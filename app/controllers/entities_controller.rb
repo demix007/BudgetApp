@@ -21,4 +21,8 @@ class EntitiesController < ApplicationController
       end
     end
   end
+
+  def destroy
+
+  end
 end
