@@ -28,4 +28,17 @@ RSpec.describe Group, type: :model do
     subject.name = 'abc' * 200
     expect(subject).to_not be_valid
   end
+
+  it 'icon should be present' do
+    @group.icon = nil
+    expect(@group).to_not be_valid
+  end
+
+  it 'icon should have a correct value' do
+    expect(@group.icon).to eql 'icon'
+  end
+
+  it 'Group name should have a correct value' do
+    expect(@group.name).to eql 'Fastfood'
+  end
 end
