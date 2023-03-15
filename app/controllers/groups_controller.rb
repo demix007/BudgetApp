@@ -31,7 +31,7 @@ class GroupsController < ApplicationController
     redirect_to groups_path
   end
 
-  def group_params
-    params.require(:group).permit(:name, :icon)
-  end
+    def group_params
+      params.require(:group).permit(:name, :icon)
+    end
 end
