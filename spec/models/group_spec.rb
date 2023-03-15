@@ -19,4 +19,13 @@ RSpec.describe Group, type: :model do
     expect(@group).to be_valid
   end
 
+  it 'name should not be too short' do
+    subject.name = 'ab'
+    expect(subject).to_not be_valid
+  end
+
+  it 'name should not be too long' do
+    subject.name = 'abc' * 200
+    expect(subject).to_not be_valid
+  end
 end
