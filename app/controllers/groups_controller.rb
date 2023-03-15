@@ -30,4 +30,8 @@ class GroupsController < ApplicationController
     @group.destroy
     redirect_to groups_path
   end
+
+  def group_params
+    params.require(:group).permit(:name, :icon)
+  end
 end
