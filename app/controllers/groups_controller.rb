@@ -13,6 +13,15 @@ class GroupsController < ApplicationController
   end
 
   def create
-    
+    group = current_user.groups.new(group_params)
+    respond_to do |format|
+      format.html do
+        if group.save
+          redirect_to groups_path
+        else
+          render :new
+        end
+      end
+    end
   end
 end
