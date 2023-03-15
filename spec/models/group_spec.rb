@@ -11,4 +11,8 @@ RSpec.describe Group, type: :model do
     expect(@group).to_not be_valid
   end
 
+  it 'name should have valid value' do
+    expect(@user1.name).to eql 'Ayodeji Abidemi'
+  end
+
 end
