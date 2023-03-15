@@ -6,9 +6,13 @@ class GroupsController < ApplicationController
   def new
     @group = current_user.groups.new
   end
-  
+
   def show
     @group = Group.find(params[:id])
     @relations = @group.relations.order('created_at DESC')
+  end
+
+  def create
+    
   end
 end
