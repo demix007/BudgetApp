@@ -15,7 +15,7 @@ class Group < ApplicationRecord
     end
     @total
   end
-  
+
   def created_at
     attributes['created_at'].strftime('%d %b %Y')
   end

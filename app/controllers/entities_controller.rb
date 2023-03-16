@@ -3,7 +3,6 @@ class EntitiesController < ApplicationController
     @entity = entities.all
   end
 
-
   def new
     @relation = Relation.new(entity: @entity)
     @entity = current_user.entities.new
@@ -31,7 +30,7 @@ class EntitiesController < ApplicationController
   end
 
   private
-  
+
   def group_params
     params[:entity][:relation][:group_id]
   end
