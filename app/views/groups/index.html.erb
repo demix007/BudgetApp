@@ -4,6 +4,14 @@
     <div class="category category-container">
       <img class = "category-img" src=<%=g.icon%> alt="category-icon">
 
+      <div class="flex">
+        <%= link_to group_path(g.id), :remote => true do %>
+          <h2 class = "category-name">
+            <%=g.name%>
+          </h2>
+        <%end%>
+        
+
     </div>
   <%end%>
   
