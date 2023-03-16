@@ -1,3 +1,11 @@
 <div class="main category-container">
+  <%@groups.each do |g|%>
+  
+    <div class="category category-container">
+      <img class = "category-img" src=<%=g.icon%> alt="category-icon">
+
+    </div>
+  <%end%>
+  
 
 </div>
