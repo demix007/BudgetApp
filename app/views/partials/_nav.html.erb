@@ -1,0 +1,32 @@
+_nav.html.erb
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg">
+      
+      <%= link_to groups_path, :remote => true do %>
+        <i class="fa fa-lg fa-arrow-left" style="color:white"></i>
+      <%end%>
+
+      <a class="transaction-link navbar-brand" href="/groups">Transactions</a>
+   
+      <%= link_to destroy_user_session_path, method: :get do %>
+        <i class="fa fa-lg fa-sign-out" style="color:white" ></i>
+      <% end %>
+   
+   </nav>
+   
+  </body>
+</html>
