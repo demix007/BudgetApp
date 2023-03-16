@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+  </head>
+
+  <body>
+    
+    <div class="body">
+      <div class="box form">
+        <h1>Add A New Transaction Here</h1>
+
+        <%= form_with model: @entity do |form| %>
+
+          <div class="entity-name mb-3">
+            <%= form.label :name %>
+            <%= form.text_field :name, required: true, class: "name-field form-control"%>
+          </div>
+
+          <div class="entity-amount mb-3">
+              <%= form.label :amount %>
+              <%= form.number_field :amount, required: true, min: 1, class: "amount-field form-control"%>
+          </div>
+        
+          <div class="entity-quantity mb-3">
+            <%= form.fields_for(@relation) do |relation| %>
+              <%= relation.label :group%>
+              <%= relation.select :group_id, current_user.groups.collect { |group| [group.name, group.id]}, {include_blank: true}, required: true, class: "form-control"%>
+            <% end %>   
+          </div>
+
+          <div class="mb-3">
+            <%= form.submit class: "submit-btn first-btn" %>
+          </div>
+
+        <%end%>
+      </div>
+    </div>
+
+
+  </body>
+</html>
