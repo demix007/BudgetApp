@@ -16,6 +16,13 @@
         </h4>
       </div>
 
+      <div class="flex">
+        <h2 class = "category-total">
+          <%=g.self_total(g.id)%>
+        </h2>
+        <%= button_to "Delete", group_path(g.id), html: {'data-turbo' => "false"}, :method => :delete, class: "delete-btn btn btn-danger" %>
+      </div>
+
     </div>
   <%end%>
   
