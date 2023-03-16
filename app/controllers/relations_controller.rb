@@ -1,7 +1,13 @@
 class RelationsController < ApplicationController
-  def new
-    @group = Group.all
-    @entity = current_user.entities.new
+  def index
     @relation = Relation.new
+    @entity = current_user.entities.new
+    @group = Group.all
+  end
+  
+  def new
+    @relation = Relation.new
+    @entity = current_user.entities.new
+    @group = Group.all
   end
 end

@@ -1,8 +1,9 @@
-class Entity < ApplicationRecord
-  belongs_to :user
+class Group < ApplicationRecord
   has_many :relations, dependent: :destroy
+  belongs_to :user, class_name: 'User', foreign_key: 'user_id'
+
+  validates :icon, presence: true
   validates :name, presence: true, length: { in: 3..300 }
-  validates :amount, numericality: { greater_than: 0 }
 
   def self_total(id)
     group = Group.find(id)

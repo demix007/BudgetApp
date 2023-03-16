@@ -1,20 +1,22 @@
 class EntitiesController < ApplicationController
-  def index; end
+  def index
+    @entity = entities.all
+  end
 
-  def show; end
 
   def new
-    @entity = current_user.entities.new
     @relation = Relation.new(entity: @entity)
+    @entity = current_user.entities.new
   end
 
   def create
-    entity = current_user.entities.new(entity_params)
+    @entity = current_user.entities.new(entity_params)
     respond_to do |format|
       format.html do
-        if entity.save
-          relation = Relation.create(group_id: group_params, entity_id: entity.id)
-          redirect_to group_path(relation.group_id)
+        if @entity.save
+          @relation = Relation.create(group_id: group_params, entity_id: @entity.id)
+          flash[:notice] = 'New Entity was successfully created'
+          redirect_to group_path(@relation.group_id)
         else
           render :new
         end
@@ -23,11 +25,13 @@ class EntitiesController < ApplicationController
   end
 
   def destroy
-    @entity = current_user.entities.find(params[:id])
-    @entity.destroy
+    @entity = current_user.entities.find(params[:id]).destroy
+    flash[:notice] = 'Entity was successfully deleted'
     redirect_to groups_path
   end
 
+  private
+  
   def group_params
     params[:entity][:relation][:group_id]
   end
