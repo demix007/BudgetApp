@@ -1,26 +1,52 @@
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_importmap_tags %>
+  </head>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <body>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+    <section class="body">
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
+      <div class="login-container box login">
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+        <h1 class = "log-in-message">Log in</h1>
 
-<%= render "devise/shared/links" %>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+          <div class="mb-3">
+            <%= f.label :email %><br/>
+            <%= f.email_field :email, autofocus: true, required: true, autocomplete: "email", class: "form-control" %>
+          </div>
+
+          <div class="mb-3">
+            <%= f.label :password %><br/>
+            <%= f.password_field :password, required: true, autocomplete: "current-password", class: "form-control" %>
+          </div>
+
+          <% if devise_mapping.rememberable? %>
+            <div class="mb-3">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "LOG IN", class: "log-in-btn" %>
+          </div>
+        <% end %>
+
+        <br/>
+        <%= render "devise/shared/links" %>
+
+      </div>
+
+    </section>
+
+  </body>
+</html>
