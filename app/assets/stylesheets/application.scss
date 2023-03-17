@@ -1,0 +1,231 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap";
+
+ * {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   background-color: #f0f2f5;
+ }
+
+ /* Navbar Stylings Start */
+
+ .navbar {
+    background-color: #426ac3;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.1rem;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+  }
+/* Navbar Stylings Start */
+
+
+ 
+ /* Groups Index Page Stylings Start */
+ .group-container {
+   height: 100vh;
+   padding: 2.2em;
+   background-color: #b3b6bb;
+ }
+
+ .category {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    background-color: rgb(246, 242, 242);
+    border-radius: 1em;
+    padding: 0.6em;
+    box-shadow: -5px 6px 14px -1px rgba(20, 20, 20, 0.75);
+    -moz-box-shadow: -5px 6px 14px -1px rgba(17, 17, 17, 0.75);
+    margin-bottom: 2em;
+    -webkit-box-shadow: -5px 6px 14px -1px rgba(16, 15, 15, 0.75);
+  }
+
+  .category img {
+    height: 100%;
+    min-width: 5em;
+    width: 50%;
+    border-radius: 0.5em;
+  }
+
+  .category-name {
+    color: rgb(67, 115, 157);
+    font-size: 1.9rem;
+  }
+  .category-btn {
+    margin: 1.5rem;
+  }
+
+/* Groups Index Page Stylings End */
+ 
+
+/* Groups New Page Stylings Start */
+ .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: white;
+   height: 28em;
+   width: 51vw;
+   padding: 1em;
+   border-radius: 0.5em;
+   box-shadow: -5px 6px 14px -1px rgba(20, 19, 19, 0.75);
+   -webkit-box-shadow: -5px 6px 14px -1px rgba(25, 24, 24, 0.75);
+   -moz-box-shadow: -5px 6px 14px -1px rgba(27, 26, 26, 0.75);
+   min-width: 15em;
+   max-width: 25em;
+ }
+ 
+ .new-category-header {
+   color: #274ed8;
+   font-weight: bolder;
+   font-size: 2em;
+   align-self: center;
+ }
+ 
+ .box a {
+   text-decoration: none;
+   color: white;
+ }
+ 
+ .category-back-btn,
+ .create-category-btn {
+   display: block;
+   width: 100%;
+   background-color: #274ed8;
+   color: rgb(255, 255, 255);
+   border-radius: 0.6em;
+   padding: 1rem;
+ }
+
+ .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .flex a {
+    text-decoration: none;
+    color: #434b54;
+  }
+  
+  .credit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 2em;
+    color: #262a2e;
+    height: 6.5em;
+    margin-left: 5rem;
+  }
+
+  .entity-total {
+    color: #262a2e;
+    margin-right: 6rem;
+  }
+  
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-btn {
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+  }
+
+  .back-btn {
+    margin-bottom: 2rem;
+    margin-right: 7rem;
+  }
+ 
+ /* Groups New Page Stylings End */
+
+/* Entity New Page Stylings Start */
+ .new-entity-header {
+    color: #274ed8;
+    font-weight: bolder;
+    font-size: 2em;
+    align-self: center;
+  }
+
+  .submit-entity-btn {
+    display: block;
+    width: 100%;
+    background-color: #274ed8;
+    color: rgb(255, 255, 255);
+    border-radius: 0.6em;
+    padding: 1rem;
+  }
+
+/* Entity New Page Stylings Start */
+
+
+/* Splash Page Stylings Start */
+
+.welcome-message {
+    color: #274ed8;
+    font-weight: 700;
+    font-size: 2em;
+    align-self: center;
+  }
+
+ .login a,
+ .signup a {
+   color: #2c32d6;
+ }
+ 
+ .signup {
+   height: 33em;
+ }
+
+ .sign-up-btn,
+ .log-in-btn {
+    background-color: #2c47be;
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: .4rem;
+    border-radius: 0.8em;
+  }
+ 
+ .btn {
+   border: 1px solid #3778c2;
+   background-color: #3778c2;
+ }
+
+ .log-in-message,
+ .sign-up-message {
+    color: #274ed8;
+    font-weight: 700;
+    font-size: 2em;
+    align-self: center;
+  }
+
+ /* Splash Page Stylings End */

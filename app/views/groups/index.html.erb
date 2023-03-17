@@ -1,32 +1,38 @@
-<div class="main category-container">
-  <%@groups.each do |g|%>
+<%= render "partials/navbar" %>
+
+<div class="main group-container">
+
+  <%@groups.each do |group|%>
   
-    <div class="category category-container">
-      <img class = "category-img" src=<%=g.icon%> alt="category-icon">
+    <div class="category-details-container category ">
+
+      <img class= "category-image" src=<%=group.icon%> alt="category-icon">
 
       <div class="flex">
-        <%= link_to group_path(g.id), :remote => true do %>
+        <%= link_to group_path(group.id), :remote => true do %>
           <h2 class = "category-name">
-            <%=g.name%>
+            <%=group.name%>
           </h2>
         <%end%>
-        
-        <h4 class = "category-creation-date">
-          This group was created on:  <%=g.created_at%>
-        </h4>
+
+        <h6>
+          <%=group.created_at%>
+        </h6>
       </div>
 
-      <div class="flex">
-        <h2 class = "category-total">
-          <%=g.self_total(g.id)%>
-        </h2>
-        <%= button_to "Delete", group_path(g.id), html: {'data-turbo' => "false"}, :method => :delete, class: "delete-btn btn btn-danger" %>
+      <div class="flex category-total">
+        <h3 class = group-total>
+          $<%=group.self_total(group.id)%>
+        </h3>
+        <%= button_to "Delete", group_path(group.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-danger group-delete-btn" %>
       </div>
 
     </div>
+
   <%end%>
   
   <%= link_to new_group_path, :remote => true do %>
-    <input type="button" class="add-btn btn btn-primary last" value="Add New Category">
+    <input type="button" class="category-btn btn btn-primary last" value="Add New Category">
   <% end %>
+
 </div>
