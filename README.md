@@ -73,16 +73,27 @@
 
 ### App Screenshots <a name="screenshots"></a>
 
-|Welcome Page| SignUp page|Login Page| Categories page|Transaction page|
-|:--------------:|:-----------------:|:--------------:|:-----------------:|-----------------:|
-|![image](https://user-images.githubusercontent.com/99715640/224487553-0647cd0c-8bdb-4f8d-b875-985574f06b1f.png)|![image](https://user-images.githubusercontent.com/99715640/224487599-7d595866-98e1-4343-ac18-3cbe53cf9e3e.png)|![image](https://user-images.githubusercontent.com/99715640/224487652-1c5910df-b3b9-411f-9b06-22151bd6617c.png)|![image](https://user-images.githubusercontent.com/99715640/224487799-f07b56f2-1265-446e-b8d1-7aabd7c32593.png)|![image](https://user-images.githubusercontent.com/99715640/224487860-d9638dcf-1e1c-446e-9425-230ffc685fbc.png)|
+|Welcome Page| SignUp page|Login Page| Add Categories page
+|:--------------:|:-----------------:|:--------------:|:-----------------:|
+![image](https://user-images.githubusercontent.com/35904766/226119476-eb03ec86-f145-48f0-8cf9-9d7a52e8ab6f.png)|![image](https://user-images.githubusercontent.com/35904766/226119603-0ae34f8f-de3e-494b-8cd8-913b2df7e42b.png)|![image](https://user-images.githubusercontent.com/35904766/226120012-cef871af-e90c-41b8-8adb-1af58bf6115a.png)|![image](https://user-images.githubusercontent.com/35904766/226120453-0c019cb8-1137-4677-a9e7-4ba9b04b4a75.png)
+
+|Add New Transaction page|Transactions page| Categories Page
+|:--------------:|:-----------------:|-----------------:|
+![image](https://user-images.githubusercontent.com/35904766/226120546-4ef59f24-b8a4-44c6-acca-29c2e6fa315b.png)|![Image](https://user-images.githubusercontent.com/35904766/226120684-94bc35f2-4c36-4792-bb40-0134c6a019ec.png)|![image](https://user-images.githubusercontent.com/35904766/226120745-5e787053-09ba-4106-b98d-3810d636f222.png)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live and Video Demo <a name="live-demo"></a>
+
+- [Video Demo Link on Loom](https://www.loom.com/share/059d1de0151b4b1f94d494d4457d5c1d)
+
+- [Live Demo Link](https://budget-app-fvow.onrender.com/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
