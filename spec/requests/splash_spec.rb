@@ -1,17 +1,23 @@
 require 'rails_helper'
 
-RSpec.describe 'Splashes', type: :request do
-  describe 'GET /index' do
-    it 'returns http success' do
-      get '/splash/index'
-      expect(response).to have_http_status(:success)
-    end
+RSpec.describe User, type: :model do
+  subject do
+    @user = User.create!(name: 'Ayodeji Abidemi', id: 1, email: 'abidemi@example.com', password: 123_456)
   end
 
-  describe 'GET /new' do
-    it 'returns http success' do
-      get '/splash/new'
-      expect(response).to have_http_status(:success)
-    end
+  before { subject.save }
+
+  it 'name should be present' do
+    subject.name = nil
+    expect(subject).to_not be_valid
+  end
+
+  it 'is valid with valid attributes' do
+    expect(subject).to be_valid
+  end
+
+  it 'is not valid with any empty attribute' do
+    subject.name = nil
+    expect(subject).to_not be_valid
   end
 end
