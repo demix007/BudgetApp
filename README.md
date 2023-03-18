@@ -71,16 +71,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### App Screenshots <a name="screenshots"></a>
-
-|Welcome Page| SignUp page|Login Page| Add Categories page
-|:--------------:|:-----------------:|:--------------:|:-----------------:|
-![image](https://user-images.githubusercontent.com/35904766/226119476-eb03ec86-f145-48f0-8cf9-9d7a52e8ab6f.png)|![image](https://user-images.githubusercontent.com/35904766/226119603-0ae34f8f-de3e-494b-8cd8-913b2df7e42b.png)|![image](https://user-images.githubusercontent.com/35904766/226120012-cef871af-e90c-41b8-8adb-1af58bf6115a.png)|![image](https://user-images.githubusercontent.com/35904766/226120453-0c019cb8-1137-4677-a9e7-4ba9b04b4a75.png)
-
-|Add New Transaction page|Transactions page| Categories Page
-|:--------------:|:-----------------:|-----------------:|
-![image](https://user-images.githubusercontent.com/35904766/226120546-4ef59f24-b8a4-44c6-acca-29c2e6fa315b.png)|![Image](https://user-images.githubusercontent.com/35904766/226120684-94bc35f2-4c36-4792-bb40-0134c6a019ec.png)|![image](https://user-images.githubusercontent.com/35904766/226120745-5e787053-09ba-4106-b98d-3810d636f222.png)
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
