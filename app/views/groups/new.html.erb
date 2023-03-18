@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    
+    <div class="form-container body">
+      <div class="box">
+
+        <h1 class="new-category-header">Add A New Category</h1>
+
+        <%= form_with model: @group do |form| %>
+              
+          <div class="form-name-container mb-3">
+              <%= form.label :name %> :
+              <%= form.text_field :name, required: true, class: "form-name form-control"%>
+          </div>
+
+          <div class="form-icon-container mb-3">
+              <%= form.label :icon %> :
+              <%= form.text_field :icon, required: true, class: "form-icon form-control"%>
+          </div>
+
+          <div class="submit-btn-container mb-3">
+              <%= form.submit "Create New Category", class: "submit-btn create-category-btn" %>
+          </div>
+              
+        <% end %>
+
+        <%= link_to '/', :remote => true do %>
+          <input type="button" class="back-btn category-back-btn" value="Go Back">
+        <% end %>
+
+      </div>
+    </div>
+  </body>
+</html>

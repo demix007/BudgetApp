@@ -1,0 +1,38 @@
+<%= render "partials/nav" %>
+
+<div class="main group-container">
+
+  <%@groups.each do |group|%>
+  
+    <div class="category-details-container category ">
+
+      <img class= "category-image" src=<%=group.icon%> alt="category-icon">
+
+      <div class="flex">
+        <%= link_to group_path(group.id), :remote => true do %>
+          <h2 class = "category-name">
+            <%=group.name%>
+          </h2>
+        <%end%>
+
+        <h6>
+          <%=group.created_at%>
+        </h6>
+      </div>
+
+      <div class="flex category-total">
+        <h3 class = group-total>
+          $<%=group.self_total(group.id)%>
+        </h3>
+        <%= button_to "Delete", group_path(group.id), html: {'data-turbo' => "false"}, :method => :delete, class: "btn btn-danger group-delete-btn" %>
+      </div>
+
+    </div>
+
+  <%end%>
+  
+  <%= link_to new_group_path, :remote => true do %>
+    <input type="button" class="category-btn btn btn-primary last" value="Add New Category">
+  <% end %>
+
+</div>
