@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ManageBudget</title>
+    <title>Budget App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,12 +13,12 @@
     
     <nav class="navbar navbar-expand-lg">
 
-      <i class="fa fa-lg fa-arrow-left" style="color:white"></i>
+      <i class="fa fa-arrow-left fa-lg" style="color:white"></i>
 
       <a class="navbar-brand" href="/groups">Categories</a>
    
       <%= link_to destroy_user_session_path, method: :get do %>
-        <i class="fa fa-lg fa-sign-out" style="color:white" ></i>
+        <i class="fa fa-sign-out fa-lg" style="color:white" ></i>
       <% end %>
    
    </nav>

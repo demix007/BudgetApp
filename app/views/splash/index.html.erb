@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title>Budget App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= csp_meta_tag %>
+    <%= csrf_meta_tags %>
+    <%= javascript_importmap_tags %>
+    
   </head>
 
   <body>
@@ -11,13 +18,12 @@
       <div class="box homepage-container">
 
         <h1 class = "welcome-message"> Budget App</h1>
+        <%= link_to new_user_registration_path, :class => 'navbar-link', :remote => true do  %>
+          <input type="button" class="sign-up-btn" value="SIGN UP">
+        <%end%>
 
         <%= link_to new_user_session_path, :class => 'navbar-link', :remote => true do  %>
           <input type="button" class="log-in-btn" value="LOG IN">
-        <%end%>
-        
-        <%= link_to new_user_registration_path, :class => 'navbar-link', :remote => true do  %>
-          <input type="button" class="sign-up-btn" value="SIGN UP">
         <%end%>
       </div>
 
