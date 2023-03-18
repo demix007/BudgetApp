@@ -1,6 +1,6 @@
 class GroupsController < ActionController::Base
   def index
-    @group = current_user.groups.all
+    @groups = current_user.groups.all
   end
 
   def new
