@@ -89,22 +89,21 @@
   flex-direction: column;
   justify-content: space-evenly;
   background-color: white;
-  height: 28em;
   width: 51vw;
-  padding: 1em;
+  padding: 1.1em;
   border-radius: 0.5em;
   box-shadow: -5px 6px 14px -1px rgba(20, 19, 19, 0.75);
   -webkit-box-shadow: -5px 6px 14px -1px rgba(25, 24, 24, 0.75);
   -moz-box-shadow: -5px 6px 14px -1px rgba(27, 26, 26, 0.75);
-  min-width: 15em;
+  min-width: 16em;
   max-width: 25em;
 }
 
 .new-category-header {
+    align-self: center;
   color: #274ed8;
   font-weight: bolder;
   font-size: 2em;
-  align-self: center;
 }
 
 .box a {
@@ -120,6 +119,10 @@
   color: rgb(255, 255, 255);
   border-radius: 0.6em;
   padding: 1rem;
+}
+
+.category-btn {
+  background-color: #23ca26;
 }
 
 .flex {
