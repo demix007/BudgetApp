@@ -140,11 +140,6 @@ Visit http://localhost:3000/ in your browser.
 
 ### Run tests
 
-Install npm with:
-
-```
-npm i
-```
 
 Install rspec with:
 
