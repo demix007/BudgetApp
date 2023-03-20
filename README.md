@@ -76,8 +76,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live and Video Demo <a name="live-demo"></a>
 
 - [Video Demo Link on Loom](https://www.loom.com/share/059d1de0151b4b1f94d494d4457d5c1d)
@@ -87,7 +85,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -161,7 +158,6 @@ rspec spec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
 
@@ -173,7 +169,6 @@ rspec spec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -183,8 +178,6 @@ rspec spec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -193,7 +186,6 @@ Feel free to check the [issues page](https://github.com/demix007/BudgetApp/issue
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -201,7 +193,6 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -210,7 +201,6 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
