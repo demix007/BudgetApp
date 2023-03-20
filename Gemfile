@@ -52,17 +52,17 @@ gem 'devise'
 
 gem 'bootstrap', '~> 5.2.2'
 
-gem 'font-awesome-rails'
-
 gem 'sass-rails'
+
+gem 'font-awesome-rails'
 
 gem 'capybara'
 
 gem 'selenium-webdriver'
 
-gem 'webdrivers'
-
 gem 'cancan'
+
+gem 'webdrivers'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
